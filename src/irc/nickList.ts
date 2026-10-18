@@ -1,6 +1,6 @@
 /*
  * pIRC - Cliente de IRC.
- * Copyright (C) 2002 - Ademir Constantino Filho
+ * Copyright (C) 2026 - Ademir Constantino
  * Licensed under the GNU General Public License, version 2 or later.
  */
 
@@ -8,7 +8,7 @@
  * The nicknames contained in a channel. The nicknames keep their status
  * prefix (@ for operators, + for voice). Port of NickNameList.java; the
  * functions return new arrays so they can be kept in React state.
- * @author Ademir Constantino Filho
+ * @author Ademir Constantino
  */
 export type NickList = readonly string[];
 

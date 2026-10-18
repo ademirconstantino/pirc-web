@@ -1,6 +1,6 @@
 /*
  * pIRC - Cliente de IRC.
- * Copyright (C) 2002 - Ademir Constantino Filho
+ * Copyright (C) 2026 - Ademir Constantino
  * Licensed under the GNU General Public License, version 2 or later.
  */
 

@@ -4,10 +4,10 @@
 
 # pIRC Web
 
-**The classic pIRC client, back from 2002, now running in your browser.**
+**The classic pIRC client, rebuilt in 2026 to run in your browser.**
 
-A React + TypeScript port of [pIRC](https://github.com/ademirconstantino/pirc), the
-100% Pure Java IRC client created by Ademir Constantino Filho.
+[pIRC](https://github.com/ademirconstantino/pirc), the IRC client created by
+Ademir Constantino, in its TS/JS version port: React + TypeScript.
 
 [![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -54,7 +54,7 @@ A React + TypeScript port of [pIRC](https://github.com/ademirconstantino/pirc), 
 - 🔔 **Unread highlighting.** The taskbar marks windows with new messages.
 - 📱 **Works on phones.** On small screens each window fills the screen and the
   taskbar works as tabs.
-- 🇧🇷 **Interface in Portuguese**, faithful to the 2002 client.
+- 🇧🇷 **Interface in Portuguese**, faithful to the original pIRC.
 
 ## 📸 Screenshots
 
@@ -232,7 +232,7 @@ Not implemented yet, same as the Java client:
 
 ## 🙏 Credits
 
-- **Ademir Constantino Filho**: author of pIRC (2002)
+- **Ademir Constantino**: author of pIRC (2026)
 - **João Pedrosa**: collaboration, including the mIRC color stripping (`ColorStrip`)
 
 The original project page is at https://portableirc.sourceforge.io/.
@@ -247,8 +247,8 @@ at https://www.gnu.org/licenses/old-licenses/gpl-2.0.html.
 
 <div align="center">
 
-Copyright © 2002 Ademir Constantino Filho
+Copyright © 2026 Ademir Constantino
 
-<sub>Made with ☕ in 2002, and with ⚛️ today.</sub>
+<sub>Made with ⚛️ in 2026.</sub>
 
 </div>

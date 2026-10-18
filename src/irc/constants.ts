@@ -1,6 +1,6 @@
 /*
  * pIRC - Cliente de IRC.
- * Copyright (C) 2002 - Ademir Constantino Filho
+ * Copyright (C) 2026 - Ademir Constantino
  * Licensed under the GNU General Public License, version 2 or later.
  */
 
@@ -16,4 +16,4 @@ export const END_OF_NAMES = 366;
 export const ERR_NICK_NAME_IN_USE = 433;
 
 export const VERSION = '0.7BETA';
-export const QUIT_MESSAGE = `pIRC Version ${VERSION} Test By Ademir Constantino Filho`;
+export const QUIT_MESSAGE = 'pIRC-Web version';

@@ -23,7 +23,7 @@ export default function Splash({ onClose, auto }: { onClose: () => void; auto: b
             <p>
               <strong>pIRC {VERSION}</strong> — portable IRC, versão web
             </p>
-            <p>Criado em 2002 por Ademir Constantino Filho, com a colaboração de João Pedrosa.</p>
+            <p>Criado em 2026 por Ademir Constantino, com a colaboração de João Pedrosa.</p>
             <p>Software livre, distribuído sob a GNU General Public License versão 2 ou posterior.</p>
           </div>
         )}
