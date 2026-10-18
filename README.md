@@ -112,10 +112,32 @@ as typed.
 
 ### Servers list
 
-The list starts with the servers from pIRC's original `cfg/servers.xml`
-(**brasnet**), plus **Libera.Chat** and **OFTC** over TLS. Your changes are
-saved in the browser's `localStorage`. To use TLS on a server, tick
-**SSL/TLS** in the server editor (usually port `6697`).
+The list keeps **brasirc.com.br** from pIRC's original `cfg/servers.xml` and
+adds the IRC networks that are online today. TLS is used wherever the network
+has a valid certificate:
+
+| Network | Server | Port |
+| --- | --- | --- |
+| BrasIRC 🇧🇷 | `irc.brasirc.com.br` | 6667 · 6697 🔒 |
+| PTnet 🇵🇹 | `irc.ptnet.org` | 6697 🔒 |
+| Libera.Chat | `irc.libera.chat` | 6697 🔒 |
+| OFTC | `irc.oftc.net` | 6697 🔒 |
+| EFnet | `irc.efnet.org` | 6667 |
+| IRCnet | `irc.underworld.no` | 6667 |
+| Undernet | `irc.undernet.org` | 6667 |
+| DALnet | `irc.dal.net` | 6697 🔒 |
+| QuakeNet | `irc.quakenet.org` | 6667 |
+| Rizon | `irc.rizon.net` | 6697 🔒 |
+| EsperNet | `irc.esper.net` | 6697 🔒 |
+| GameSurge | `irc.gamesurge.net` | 6667 |
+| hackint | `irc.hackint.org` | 6697 🔒 |
+| IRCHighway | `irc.irchighway.net` | 6667 |
+| Snoonet | `irc.snoonet.org` | 6697 🔒 |
+| SwiftIRC | `irc.swiftirc.net` | 6697 🔒 |
+| Ergo | `irc.ergo.chat` | 6697 🔒 |
+
+Your changes are saved in the browser's `localStorage`. To use TLS on a
+server, tick **SSL/TLS** in the server editor (usually port `6697`).
 
 ## 🧠 How it works
 

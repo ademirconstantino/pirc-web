@@ -21,16 +21,34 @@ export interface Server {
   tls?: boolean;
 }
 
-const STORAGE_KEY = 'pirc.servers';
+/* the version changes when the default list changes, so the browsers
+   that saved the old list get the new one */
+const STORAGE_KEY = 'pirc.servers.v2';
 
-/** cfg/servers.xml of pIRC, plus networks that are online today */
+/**
+ * brasirc.com.br from cfg/servers.xml of pIRC, plus the IRC networks that
+ * are online today. SSL/TLS is used where the network has a valid
+ * certificate.
+ */
 export const DEFAULT_SERVERS: readonly Server[] = [
-  { group: 'brasnet', name: 'Sercomtel', host: 'irc.sercomtel.com.br', port: 6667 },
-  { group: 'brasnet', name: 'Elogica-Refice/PE', host: 'Elogica.REC.PE.Brasnet.org', port: 6667 },
-  { group: 'brasnet', name: 'Samnet-Natal/RN', host: 'Samnet.NAT.RN.Brasnet.org', port: 6667 },
   { group: 'brasnet', name: 'brasirc.com.br', host: 'irc.brasirc.com.br', port: 6667 },
+  { group: 'brasnet', name: 'brasirc.com.br (SSL)', host: 'irc.brasirc.com.br', port: 6697, tls: true },
+  { group: 'ptnet', name: 'PTnet', host: 'irc.ptnet.org', port: 6697, tls: true },
   { group: 'libera', name: 'Libera.Chat', host: 'irc.libera.chat', port: 6697, tls: true },
   { group: 'oftc', name: 'OFTC', host: 'irc.oftc.net', port: 6697, tls: true },
+  { group: 'efnet', name: 'EFnet', host: 'irc.efnet.org', port: 6667 },
+  { group: 'ircnet', name: 'IRCnet (underworld.no)', host: 'irc.underworld.no', port: 6667 },
+  { group: 'undernet', name: 'Undernet', host: 'irc.undernet.org', port: 6667 },
+  { group: 'dalnet', name: 'DALnet', host: 'irc.dal.net', port: 6697, tls: true },
+  { group: 'quakenet', name: 'QuakeNet', host: 'irc.quakenet.org', port: 6667 },
+  { group: 'rizon', name: 'Rizon', host: 'irc.rizon.net', port: 6697, tls: true },
+  { group: 'esper', name: 'EsperNet', host: 'irc.esper.net', port: 6697, tls: true },
+  { group: 'gamesurge', name: 'GameSurge', host: 'irc.gamesurge.net', port: 6667 },
+  { group: 'hackint', name: 'hackint', host: 'irc.hackint.org', port: 6697, tls: true },
+  { group: 'irchighway', name: 'IRCHighway', host: 'irc.irchighway.net', port: 6667 },
+  { group: 'snoonet', name: 'Snoonet', host: 'irc.snoonet.org', port: 6697, tls: true },
+  { group: 'swiftirc', name: 'SwiftIRC', host: 'irc.swiftirc.net', port: 6697, tls: true },
+  { group: 'ergo', name: 'Ergo', host: 'irc.ergo.chat', port: 6697, tls: true },
 ];
 
 export function sameServer(a: Server, b: Server): boolean {
