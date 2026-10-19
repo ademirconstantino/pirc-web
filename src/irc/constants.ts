@@ -15,5 +15,5 @@ export const NAM_REPLY = 353;
 export const END_OF_NAMES = 366;
 export const ERR_NICK_NAME_IN_USE = 433;
 
-export const VERSION = '0.7BETA';
+export const VERSION = '1.0';
 export const QUIT_MESSAGE = 'pIRC-Web version';

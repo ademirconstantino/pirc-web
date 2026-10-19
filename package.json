@@ -1,6 +1,6 @@
 {
   "name": "pirc-web",
-  "version": "0.7.0",
+  "version": "1.0.0",
   "description": "pIRC (portable IRC) - web port of the pIRC Java IRC client, written in React",
   "license": "GPL-2.0-or-later",
   "private": true,

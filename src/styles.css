@@ -188,6 +188,11 @@ select {
   overflow: hidden;
 }
 
+/* the display above would override the hidden attribute of minimized windows */
+.frame[hidden] {
+  display: none;
+}
+
 .frame.active {
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
 }
@@ -609,6 +614,45 @@ button:focus-visible {
 
 .splash-credits p {
   margin: 6px 0;
+}
+
+.loading {
+  width: min(320px, 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.loading-title {
+  font-family: var(--font-chat);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.loading-bar {
+  height: 14px;
+  padding: 2px;
+  background: var(--chrome);
+  border: 1px solid var(--chrome-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.loading-fill {
+  height: 100%;
+  width: 0;
+  background: var(--brand);
+  animation: loading-fill linear forwards;
+}
+
+.loading-text {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+@keyframes loading-fill {
+  to {
+    width: 100%;
+  }
 }
 
 /* ------------------------------------------------------------ small screens */
